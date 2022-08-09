@@ -1,8 +1,8 @@
-package com.droidsonroids.workcation.common.maps;
+package com.test.workflow.workcation.common.maps;
 
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-import com.droidsonroids.workcation.common.model.Bounds;
+import com.test.workflow.workcation.common.model.Bounds;
 
 public class MapsUtil {
     public static final String MAP_BITMAP_KEY = "map_bitmap_key";

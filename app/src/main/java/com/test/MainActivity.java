@@ -11,11 +11,13 @@ import android.view.WindowManager;
 import com.test.buttonwaveanimation.Animation2;
 import com.test.circleshimmer.ShimmerMainActivity;
 import com.test.mapmarkeranimation.MapMainActivity;
+import com.test.pataadetailsview.ListMainActivity;
 import com.test.rippleActivityStart.Activity1;
 import com.test.starblinkanimation.R;
 import com.test.starblinkanimation.start.Animation1;
 import com.test.starblinkanimation.start.GameView;
 import com.test.textviewaniation.TextViewDrawMainActivity;
+import com.test.viewpageindicator.ViewPageIndicatorMainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Activity1.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListMainActivity.class);
                 startActivity(intent);
             }
         });

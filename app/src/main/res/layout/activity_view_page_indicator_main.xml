@@ -1,34 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.test.viewpageindicator.ViewPageIndicatorMainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.StarBlinkAnimation.AppBarOverlay">
+        android:layout_height="200dp"></androidx.viewpager2.widget.ViewPager2>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.StarBlinkAnimation.PopupOverlay" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <com.test.viewpageindicator.MyIndicatorView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/indicator"
+        android:orientation="horizontal">
 
-    <include layout="@layout/content_view_page_indicator_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    </com.test.viewpageindicator.MyIndicatorView>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

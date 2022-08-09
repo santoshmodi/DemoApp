@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.model;
+package com.test.workflow.workcation.common.model;
 
 import android.util.Log;
 import com.google.android.gms.maps.model.LatLng;

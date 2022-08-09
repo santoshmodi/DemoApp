@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.maps;
+package com.test.workflow.workcation.common.maps;
 
 import android.content.Context;
 import android.graphics.Point;

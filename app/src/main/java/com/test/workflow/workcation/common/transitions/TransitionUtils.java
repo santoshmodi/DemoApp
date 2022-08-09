@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.transitions;
+package com.test.workflow.workcation.common.transitions;
 
 public class TransitionUtils {
     private static final String DEFAULT_TRANSITION_NAME = "transition";

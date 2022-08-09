@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.maps;
+package com.test.workflow.workcation.common.maps;
 
 import android.graphics.Bitmap;
 import android.util.LruCache;

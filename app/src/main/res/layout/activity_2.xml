@@ -10,7 +10,6 @@
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
-
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
@@ -19,7 +18,9 @@
         android:id="@+id/overlayview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/transparent"></com.test.rippleActivityStart.RadiusOverlayView>
+        android:background="@android:color/transparent"
+        app:backgroundColor="#55ff0000"
+        app:radiusDefault="10"></com.test.rippleActivityStart.RadiusOverlayView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

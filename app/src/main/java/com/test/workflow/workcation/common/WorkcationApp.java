@@ -1,10 +1,11 @@
-package com.droidsonroids.workcation.common;
+package com.test.workflow.workcation.common;
 
 import android.app.Application;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.maps.MapBitmapCache;
-import com.droidsonroids.workcation.common.model.BaliDataProvider;
-import com.droidsonroids.workcation.common.model.MapsApiManager;
+
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.model.BaliDataProvider;
+import com.test.workflow.workcation.common.model.MapsApiManager;
+
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 public class WorkcationApp extends Application {
@@ -23,7 +24,7 @@ public class WorkcationApp extends Application {
     private void initCalligraphy() {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/Roboto-RobotoRegular.ttf")
-                .setFontAttrId(R.attr.fontPath)
+//                .setFontAttrId(com.test.starblinkanimation.R.attr.fontPath)
                 .build()
         );
     }

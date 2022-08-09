@@ -1,12 +1,14 @@
-package com.droidsonroids.workcation.common.maps;
+package com.test.workflow.workcation.common.maps;
 
 import android.content.Context;
 import android.graphics.Point;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import com.droidsonroids.workcation.R;
+
+import androidx.annotation.NonNull;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.test.starblinkanimation.R;
 
 public class PulseOverlayLayout extends MapOverlayLayout {
     private static final int ANIMATION_DELAY_FACTOR = 100;
@@ -20,7 +22,7 @@ public class PulseOverlayLayout extends MapOverlayLayout {
 
     public PulseOverlayLayout(final Context context, final AttributeSet attrs) {
         super(context, attrs);
-        inflate(context, R.layout.pulse_wrapper_layout, this);
+        inflate(context, com.test.starblinkanimation.R.layout.pulse_wrapper_layout, this);
     }
 
     public void setupMarkers(final Point point, final LatLng latLng) {

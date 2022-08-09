@@ -1,18 +1,20 @@
-package com.droidsonroids.workcation.screens.main;
+package com.test.workflow.workcation.screens.main;
 
 import android.os.Bundle;
 import butterknife.OnClick;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.maps.MapsUtil;
-import com.droidsonroids.workcation.common.mvp.MvpActivity;
-import com.droidsonroids.workcation.common.mvp.MvpFragment;
-import com.droidsonroids.workcation.screens.main.home.HomeFragment;
-import com.droidsonroids.workcation.screens.main.map.DetailsFragment;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.maps.MapsUtil;
+import com.test.workflow.workcation.common.mvp.MvpActivity;
+import com.test.workflow.workcation.common.mvp.MvpFragment;
+import com.test.workflow.workcation.common.mvp.MvpPresenter;
+import com.test.workflow.workcation.common.mvp.MvpView;
+import com.test.workflow.workcation.screens.main.home.HomeFragment;
+import com.test.workflow.workcation.screens.main.map.DetailsFragment;
 
 public class MainActivity extends MvpActivity<MainView, MainPresenter> implements MainView, OnMapReadyCallback {
 
@@ -26,7 +28,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_main;
+        return R.layout.activity_main_workflow;
     }
 
     @Override
@@ -78,7 +80,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     }
 
     private void triggerFragmentBackPress(final int count) {
-        ((MvpFragment)getSupportFragmentManager().findFragmentByTag(getSupportFragmentManager().getBackStackEntryAt(count - 1).getName())).onBackPressed();
+        ((MvpFragment<MvpView, MvpPresenter>)getSupportFragmentManager().findFragmentByTag(getSupportFragmentManager().getBackStackEntryAt(count - 1).getName())).onBackPressed();
     }
 
     public void superOnBackPressed() {

@@ -1,10 +1,8 @@
-package com.droidsonroids.workcation.screens.main.home;
+package com.test.workflow.workcation.screens.main.home;
 
 import android.graphics.Bitmap;
-import com.droidsonroids.workcation.common.maps.MapBitmapCache;
-import com.droidsonroids.workcation.common.maps.MapsUtil;
-import com.droidsonroids.workcation.common.mvp.MvpPresenterImpl;
 import com.google.android.gms.maps.GoogleMap;
+import com.test.workflow.workcation.common.mvp.MvpPresenterImpl;
 
 public class HomePresenterImpl extends MvpPresenterImpl<HomeView> implements HomePresenter {
 }

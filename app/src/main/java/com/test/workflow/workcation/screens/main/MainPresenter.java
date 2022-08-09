@@ -1,7 +1,8 @@
-package com.droidsonroids.workcation.screens.main;
+package com.test.workflow.workcation.screens.main;
 
 import android.graphics.Bitmap;
-import com.droidsonroids.workcation.common.mvp.MvpPresenter;
+
+import com.test.workflow.workcation.common.mvp.MvpPresenter;
 
 public interface MainPresenter extends MvpPresenter<MainView> {
     void saveBitmap(Bitmap googleMap);

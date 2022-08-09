@@ -2,14 +2,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.test.mapmarkeranimation.RadarMapView
         android:id="@+id/map"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"></com.test.mapmarkeranimation.RadarMapView>
 
 
-    </com.test.mapmarkeranimation.RadarMapView>
+    <com.test.circleshimmer.CircleRippleView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:rb_color="#FFC107"
+        app:rb_strokeWidth="1dp"
+        android:layout_centerInParent="true"></com.test.circleshimmer.CircleRippleView>
 
 </RelativeLayout>

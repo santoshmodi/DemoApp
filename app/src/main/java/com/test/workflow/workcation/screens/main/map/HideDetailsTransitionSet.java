@@ -1,13 +1,14 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
 import android.content.Context;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.transition.TransitionSet;
 import android.view.View;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.transitions.TextResizeTransition;
-import com.droidsonroids.workcation.common.transitions.TransitionBuilder;
+
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.transitions.TextResizeTransition;
+import com.test.workflow.workcation.common.transitions.TransitionBuilder;
 
 class HideDetailsTransitionSet extends TransitionSet {
     private static final String TITLE_TEXT_VIEW_TRANSITION_NAME = "titleTextView";
@@ -36,7 +37,7 @@ class HideDetailsTransitionSet extends TransitionSet {
 
     private Transition textResize() {
         return new TransitionBuilder(new TextResizeTransition())
-                .link(from.findViewById(R.id.title), to.textViewTitle, titleTransitionName())
+                .link(from.findViewById(com.test.starblinkanimation.R.id.title), to.textViewTitle, titleTransitionName())
                 .build();
     }
 

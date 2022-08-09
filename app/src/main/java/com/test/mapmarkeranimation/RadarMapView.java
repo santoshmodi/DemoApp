@@ -43,6 +43,12 @@ public class RadarMapView extends MapView implements OnMapReadyCallback {
     }
 
     @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+
+    }
+
+    @Override
     public void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
         canvas.save();

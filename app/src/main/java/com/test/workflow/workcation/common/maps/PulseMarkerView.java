@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.maps;
+package com.test.workflow.workcation.common.maps;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,16 +8,18 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.views.GuiUtils;
+
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.maps.model.LatLng;
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.views.GuiUtils;
 
 public class PulseMarkerView extends MarkerView {
     private static final int STROKE_DIMEN = 2;
@@ -86,7 +88,7 @@ public class PulseMarkerView extends MarkerView {
     }
 
     private void setupScaleAnimation(final Context context) {
-        scaleAnimation = AnimationUtils.loadAnimation(context, R.anim.pulse);
+        scaleAnimation = AnimationUtils.loadAnimation(context, com.test.starblinkanimation.R.anim.pulse);
         scaleAnimation.setDuration(100);
     }
 

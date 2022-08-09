@@ -21,19 +21,19 @@ import com.test.starblinkanimation.R;
 import java.util.ArrayList;
 import java.util.List;
 
+//Create By Santosh
 public class CircleRippleView extends View {
-
     private static final int DEFAULT_RIPPLE_COUNT = 4;
     private static final int DEFAULT_DURATION_TIME = 40;
     private int rippleColor;
     private float rippleStrokeWidth;
-    final Handler handler = new Handler();// 1000 milliseconds == 1 second
+    final Handler handler = new Handler();
     private Paint mPaintRadar;
     private Paint mPaintRadarBorder;
     private List<Circle> item = new ArrayList<>();
+
     private Runnable runnable = new Runnable() {
         public void run() {
-            System.out.println("myHandler: here!"); // Do your work here
             for (Circle cc : item) {
                 cc.Update(getWidth() / 2);
             }
@@ -82,12 +82,10 @@ public class CircleRippleView extends View {
         mPaintRadar = new Paint();
         mPaintRadar.setColor(rippleColor);
         mPaintRadar.setStyle(Paint.Style.FILL);
-
         mPaintRadarBorder = new Paint();
         mPaintRadarBorder.setColor(rippleColor);
         mPaintRadarBorder.setStyle(Paint.Style.STROKE);
         mPaintRadarBorder.setStrokeWidth(rippleStrokeWidth);
-//        item.add(new Circle(0));
         handler.postDelayed(new Runnable() {
             public void run() {
                 System.out.println("myHandler: here!"); // Do your work here

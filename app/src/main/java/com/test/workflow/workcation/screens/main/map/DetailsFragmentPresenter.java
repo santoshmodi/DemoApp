@@ -1,7 +1,7 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
-import com.droidsonroids.workcation.common.mvp.MvpPresenter;
 import com.google.android.gms.maps.model.LatLng;
+import com.test.workflow.workcation.common.mvp.MvpPresenter;
 
 public interface DetailsFragmentPresenter extends MvpPresenter<DetailsFragmentView> {
 

@@ -1,7 +1,7 @@
-package com.droidsonroids.workcation.screens.main.home;
+package com.test.workflow.workcation.screens.main.home;
 
-import com.droidsonroids.workcation.common.mvp.MvpPresenter;
 import com.google.android.gms.maps.GoogleMap;
+import com.test.workflow.workcation.common.mvp.MvpPresenter;
 
 public interface HomePresenter extends MvpPresenter<HomeView> {
 }

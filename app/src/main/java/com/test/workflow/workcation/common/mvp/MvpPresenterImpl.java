@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.mvp;
+package com.test.workflow.workcation.common.mvp;
 
 import java.lang.ref.SoftReference;
 

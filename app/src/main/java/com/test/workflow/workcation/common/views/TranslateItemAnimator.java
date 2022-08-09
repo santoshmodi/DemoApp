@@ -1,7 +1,8 @@
-package com.droidsonroids.workcation.common.views;
+package com.test.workflow.workcation.common.views;
 
-import android.support.v4.view.ViewCompat;
-import android.support.v7.widget.RecyclerView;
+
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class TranslateItemAnimator extends BaseItemAnimator {
 

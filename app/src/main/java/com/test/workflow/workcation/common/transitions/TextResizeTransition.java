@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.transitions;
+package com.test.workflow.workcation.common.transitions;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

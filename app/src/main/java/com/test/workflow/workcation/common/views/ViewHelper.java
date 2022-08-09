@@ -1,7 +1,8 @@
-package com.droidsonroids.workcation.common.views;
+package com.test.workflow.workcation.common.views;
 
-import android.support.v4.view.ViewCompat;
 import android.view.View;
+
+import androidx.core.view.ViewCompat;
 
 public final class ViewHelper {
 

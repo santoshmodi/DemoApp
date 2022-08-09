@@ -5,17 +5,15 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 import android.util.Log;
-
+//Create By Santosh
 public class Square {
     private float Radius = 0;
     private int Alpha = 255;
-
     Square(int radius) {
         this.Radius = radius;
     }
 
     public void Update(int mRadius) {
-      //  Log.e("mRadius", mRadius + "");
         Radius = Radius + 2;
         Alpha = Alpha - 5;
         if (Alpha <= 0) {

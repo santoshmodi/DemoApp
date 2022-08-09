@@ -1,11 +1,13 @@
-package com.droidsonroids.workcation.screens.main.home;
+package com.test.workflow.workcation.screens.main.home;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.mvp.MvpFragment;
-import com.droidsonroids.workcation.screens.main.MainActivity;
+
+import androidx.annotation.Nullable;
+
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.mvp.MvpFragment;
+import com.test.workflow.workcation.screens.main.MainActivity;
 
 public class HomeFragment extends MvpFragment<HomeView, HomePresenter> implements HomeView {
     public static final String TAG = HomeFragment.class.getSimpleName();
@@ -17,12 +19,12 @@ public class HomeFragment extends MvpFragment<HomeView, HomePresenter> implement
 
     @Override
     public void onBackPressed() {
-        ((MainActivity)getActivity()).superOnBackPressed();
+        ((MainActivity) getActivity()).superOnBackPressed();
     }
 
     @Override
     public int getLayout() {
-        return R.layout.fragment_home;
+        return com.test.starblinkanimation.R.layout.fragment_home;
     }
 
     public static HomeFragment newInstance() {

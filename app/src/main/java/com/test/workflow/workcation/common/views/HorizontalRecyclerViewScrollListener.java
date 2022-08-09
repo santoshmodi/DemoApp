@@ -1,7 +1,8 @@
-package com.droidsonroids.workcation.common.views;
+package com.test.workflow.workcation.common.views;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class HorizontalRecyclerViewScrollListener extends RecyclerView.OnScrollListener {
     private static final int OFFSET_RANGE = 50;

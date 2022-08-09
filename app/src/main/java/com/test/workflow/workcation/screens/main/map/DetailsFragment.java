@@ -1,31 +1,34 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.transition.Scene;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import butterknife.BindView;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.maps.MapBitmapCache;
-import com.droidsonroids.workcation.common.maps.PulseOverlayLayout;
-import com.droidsonroids.workcation.common.model.Place;
-import com.droidsonroids.workcation.common.mvp.MvpFragment;
-import com.droidsonroids.workcation.common.transitions.ScaleDownImageTransition;
-import com.droidsonroids.workcation.common.transitions.TransitionUtils;
-import com.droidsonroids.workcation.common.views.HorizontalRecyclerViewScrollListener;
-import com.droidsonroids.workcation.common.views.TranslateItemAnimator;
-import com.droidsonroids.workcation.screens.main.MainActivity;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.maps.MapBitmapCache;
+import com.test.workflow.workcation.common.maps.PulseOverlayLayout;
+import com.test.workflow.workcation.common.model.Place;
+import com.test.workflow.workcation.common.mvp.MvpFragment;
+import com.test.workflow.workcation.common.transitions.ScaleDownImageTransition;
+import com.test.workflow.workcation.common.transitions.TransitionUtils;
+import com.test.workflow.workcation.common.views.HorizontalRecyclerViewScrollListener;
+import com.test.workflow.workcation.common.views.TranslateItemAnimator;
+import com.test.workflow.workcation.screens.main.MainActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +36,11 @@ public class DetailsFragment extends MvpFragment<DetailsFragmentView, DetailsFra
         implements DetailsFragmentView, OnMapReadyCallback, BaliPlacesAdapter.OnPlaceClickListener, HorizontalRecyclerViewScrollListener.OnItemCoverListener {
     public static final String TAG = DetailsFragment.class.getSimpleName();
 
-    @BindView(R.id.recyclerview) RecyclerView recyclerView;
+    @BindView(R.id.recyclerview)
+    RecyclerView recyclerView;
     @BindView(R.id.container) FrameLayout containerLayout;
-    @BindView(R.id.mapOverlayLayout) PulseOverlayLayout mapOverlayLayout;
+    @BindView(R.id.mapOverlayLayout)
+    PulseOverlayLayout mapOverlayLayout;
 
     private List<Place> baliPlaces;
     private BaliPlacesAdapter baliAdapter;

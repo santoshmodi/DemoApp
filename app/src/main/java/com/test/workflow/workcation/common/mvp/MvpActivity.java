@@ -1,9 +1,11 @@
-package com.droidsonroids.workcation.common.mvp;
+package com.test.workflow.workcation.common.mvp;
 
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
+
+import androidx.annotation.LayoutRes;
+
 import butterknife.ButterKnife;
-import com.droidsonroids.workcation.common.SuperActivity;
+import com.test.workflow.workcation.common.SuperActivity;
 
 public abstract class MvpActivity<V extends MvpView, P extends MvpPresenter> extends SuperActivity implements MvpView {
 

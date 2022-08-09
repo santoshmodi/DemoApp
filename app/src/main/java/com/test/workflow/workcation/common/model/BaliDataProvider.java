@@ -1,10 +1,11 @@
-package com.droidsonroids.workcation.common.model;
+package com.test.workflow.workcation.common.model;
 
 import android.content.res.AssetManager;
-import com.droidsonroids.workcation.common.WorkcationApp;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.gson.Gson;
+import com.test.workflow.workcation.common.WorkcationApp;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <com.droidsonroids.workcation.common.views.TimelineView
+    <com.test.workflow.workcation.common.views.TimelineLayout
         android:id="@+id/timelineView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

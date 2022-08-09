@@ -1,6 +1,6 @@
-package com.droidsonroids.workcation.screens.main.home;
+package com.test.workflow.workcation.screens.main.home;
 
-import com.droidsonroids.workcation.common.mvp.MvpView;
+import com.test.workflow.workcation.common.mvp.MvpView;
 
 public interface HomeView extends MvpView {
 

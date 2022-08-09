@@ -1,8 +1,9 @@
-package com.droidsonroids.workcation.common.views;
+package com.test.workflow.workcation.common.views;
 
-import android.support.v4.view.ViewPropertyAnimatorListener;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.core.view.ViewPropertyAnimatorListener;
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class AnimateViewHolder extends RecyclerView.ViewHolder {
 

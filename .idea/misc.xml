@@ -3,15 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/drawable/cardview_timeline_background.xml" value="0.1975" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1975" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/drawable/pataa_card_background.xml" value="0.1975" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_1.xml" value="0.11927083333333334" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_2.xml" value="0.10520833333333333" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_list_main.xml" value="0.22826086956521738" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_main2.xml" value="0.11302083333333333" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_main_workflow.xml" value="0.22826086956521738" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_map.xml" value="0.1" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_map_main.xml" value="0.22826086956521738" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_shimmer_main.xml" value="0.136986301369863" />
         <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_text_view_draw_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/activity_view_page_indicator_main.xml" value="0.15806159420289856" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/fragment_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/fragment_home.xml" value="0.11302083333333333" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/fragment_map_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/item_bali_place.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/item_place.xml" value="0.11302083333333333" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/layout_map_wrapper.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/layout_timeline.xml" value="0.22826086956521738" />
+        <entry key="..\:/SANTOSH_WORK/MY_POC/StarBlinkAnimation/app/src/main/res/layout/pulse_wrapper_layout.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

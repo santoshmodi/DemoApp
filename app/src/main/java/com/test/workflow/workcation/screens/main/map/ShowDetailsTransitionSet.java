@@ -1,13 +1,14 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
 import android.content.Context;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.transition.TransitionSet;
 import android.view.View;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.transitions.TextResizeTransition;
-import com.droidsonroids.workcation.common.transitions.TransitionBuilder;
+
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.transitions.TextResizeTransition;
+import com.test.workflow.workcation.common.transitions.TransitionBuilder;
 
 class ShowDetailsTransitionSet extends TransitionSet {
     private static final String TITLE_TEXT_VIEW_TRANSITION_NAME = "titleTextView";
@@ -51,7 +52,7 @@ class ShowDetailsTransitionSet extends TransitionSet {
 
     private Transition shared() {
         return new TransitionBuilder(TransitionInflater.from(context).inflateTransition(android.R.transition.move))
-                .link(from.findViewById(R.id.headerImage), to.imageViewPlaceDetails, transitionName)
+                .link(from.findViewById(com.test.starblinkanimation.R.id.headerImage), to.imageViewPlaceDetails, transitionName)
                 .link(from, to.cardViewContainer, cardViewTransitionName())
                 .build();
     }

@@ -47,6 +47,12 @@
             android:layout_height="wrap_content"
             android:text="Activity Animation"></Button>
 
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Map Marker Animation"></Button>
+
 
     </LinearLayout>
 

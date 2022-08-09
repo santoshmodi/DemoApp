@@ -1,19 +1,23 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.model.Place;
-import com.droidsonroids.workcation.common.transitions.TransitionUtils;
+
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.model.Place;
+import com.test.workflow.workcation.common.transitions.TransitionUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,7 +67,8 @@ class BaliPlacesAdapter extends RecyclerView.Adapter<BaliPlacesAdapter.BaliViewH
         @BindView(R.id.title) TextView title;
         @BindView(R.id.price) TextView price;
         @BindView(R.id.opening_hours) TextView openingHours;
-        @BindView(R.id.root) CardView root;
+        @BindView(R.id.root)
+        CardView root;
         @BindView(R.id.headerImage) ImageView placePhoto;
 
         BaliViewHolder(final View itemView) {

@@ -1,9 +1,7 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.v7.widget.CardView;
 import android.transition.Scene;
 import android.transition.TransitionManager;
 import android.transition.TransitionSet;
@@ -12,14 +10,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.cardview.widget.CardView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.droidsonroids.workcation.R;
-import com.droidsonroids.workcation.common.model.Place;
+import com.test.starblinkanimation.R;
+import com.test.workflow.workcation.common.model.Place;
 
 public class DetailsLayout extends CoordinatorLayout {
 
-    @BindView(R.id.cardview) CardView cardViewContainer;
+    @BindView(R.id.cardview)
+    CardView cardViewContainer;
     @BindView(R.id.headerImage) ImageView imageViewPlaceDetails;
     @BindView(R.id.title) TextView textViewTitle;
     @BindView(R.id.description) TextView textViewDescription;

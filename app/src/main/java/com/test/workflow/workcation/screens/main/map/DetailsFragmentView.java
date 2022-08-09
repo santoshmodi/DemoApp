@@ -1,9 +1,10 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
-import com.droidsonroids.workcation.common.model.Place;
-import com.droidsonroids.workcation.common.mvp.MvpView;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.test.workflow.workcation.common.model.Place;
+import com.test.workflow.workcation.common.mvp.MvpView;
+
 import java.util.ArrayList;
 import java.util.List;
 

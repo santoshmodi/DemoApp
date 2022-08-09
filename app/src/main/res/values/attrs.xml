@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="TimelineView">
-        <attr name="tv_margin" format="dimension"/>
+        <attr name="tv_margin" format="dimension" />
         <attr name="tv_lineThickness" format="dimension" />
         <attr name="tv_radius" format="dimension" />
         <attr name="tv_outerRadius" format="dimension" />
@@ -9,6 +9,18 @@
     </declare-styleable>
 
     <declare-styleable name="ScaleDownImageTransition">
-        <attr name="factor" format="integer"/>
+        <attr name="factor" format="integer" />
     </declare-styleable>
+    <declare-styleable name="TransparentCardView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="radiusDefault" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="MyIndicatorViewAttrs">
+        <attr name="dotColor" format="color" />
+        <attr name="dotSize" format="integer" />
+        <attr name="textFontSize" format="integer" />
+        <attr name="textFontColor" format="color" />
+        <attr name="textBackgrounds" format="color" />
+    </declare-styleable>
+
 </resources>

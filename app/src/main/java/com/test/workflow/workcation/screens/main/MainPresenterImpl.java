@@ -1,9 +1,9 @@
-package com.droidsonroids.workcation.screens.main;
+package com.test.workflow.workcation.screens.main;
 
 import android.graphics.Bitmap;
-import com.droidsonroids.workcation.common.maps.MapBitmapCache;
-import com.droidsonroids.workcation.common.model.BaliDataProvider;
-import com.droidsonroids.workcation.common.mvp.MvpPresenterImpl;
+import com.test.workflow.workcation.common.maps.MapBitmapCache;
+import com.test.workflow.workcation.common.model.BaliDataProvider;
+import com.test.workflow.workcation.common.mvp.MvpPresenterImpl;
 
 public class MainPresenterImpl extends MvpPresenterImpl<MainView> implements MainPresenter {
     @Override

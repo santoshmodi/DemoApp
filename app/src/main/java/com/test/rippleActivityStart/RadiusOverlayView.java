@@ -1,8 +1,8 @@
 package com.test.rippleActivityStart;
 
-
 import android.annotation.TargetApi;
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -13,54 +13,64 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.os.Handler;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.test.starblinkanimation.R;
 
-/**
- * @author Victor Kosenko
- */
+//Create By Santosh
 public class RadiusOverlayView extends View {
     public interface AnimationEvent {
         public void OnStart();
-
         public void OnComplete();
     }
 
-    private Bitmap windowFrame;
     private AnimationEvent event;
     final Handler handler = new Handler();
-    int Radius = 10; // 1000 milliseconds == 1 second
+    private int radius = 10;
+    private int backgroundColor = Color.WHITE;
 
     public RadiusOverlayView(Context context) {
         super(context);
-
     }
 
     public RadiusOverlayView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        init(context, attrs);
     }
 
     public RadiusOverlayView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-
+        init(context, attrs);
     }
 
+    private void init(Context context, AttributeSet attrs) {
+        if (android.os.Build.VERSION.SDK_INT >= 11) {
+            setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        }
+
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TransparentCardView);
+        backgroundColor = a.getInt(R.styleable.TransparentCardView_backgroundColor, Color.WHITE);
+        radius = a.getInt(R.styleable.TransparentCardView_radiusDefault, 10);
+        a.recycle();
+
+
+    }
 
     public void Start(AnimationEvent ent) {
         this.event = ent;
         handler.postDelayed(new Runnable() {
             public void run() {
-                Radius = Radius + 20;
-                if (Radius < (getHeight() / 2 + 200)) {
+                Log.e("calling", "handler");
+                radius = radius + 40;
+                if (radius < (getHeight() / 2 + 200)) {
                     handler.postDelayed(this, 10);
                     invalidate();
                 } else {
                     event.OnComplete();
-                    windowFrame.recycle();
-                    windowFrame = null;
                 }
             }
         }, 10);
@@ -70,36 +80,22 @@ public class RadiusOverlayView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        createWindowFrame();
-        canvas.drawBitmap(windowFrame, 0, 0, null);
+        RectF outerRectangle = new RectF(0, 0, getWidth(), getHeight());
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG); // Anti alias allows for smooth corners
+        paint.setColor(backgroundColor); // This is the color of your activity background
+        canvas.drawRect(outerRectangle, paint);
+        paint.setColor(Color.TRANSPARENT); // An obvious color to help debugging
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN)); // A out B http://en.wikipedia.org/wiki/File:Alpha_compositing.svg
+        float centerX = getWidth() / 2;
+        float centerY = getHeight() / 2;
+        canvas.drawCircle(centerX, centerY, radius, paint);
     }
-
 
     @Override
     protected void dispatchDraw(Canvas canvas) {
         super.dispatchDraw(canvas);
     }
 
-
-    protected void createWindowFrame() {
-        windowFrame = Bitmap.createBitmap(getWidth(), getHeight(),
-                Bitmap.Config.ARGB_4444);
-        Canvas canvas = new Canvas(windowFrame);
-        RectF outerRectangle = new RectF(0, 0, getWidth(), getHeight());
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG); // Anti alias allows for smooth corners
-        paint.setColor(Color.WHITE); // This is the color of your activity background
-        paint.setAlpha(220);
-        canvas.drawRect(outerRectangle, paint);
-
-        paint.setColor(Color.TRANSPARENT); // An obvious color to help debugging
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT)); // A out B http://en.wikipedia.org/wiki/File:Alpha_compositing.svg
-        float centerX = getWidth() / 2;
-        float centerY = getHeight() / 2;
-        float radius = Radius;// Math.min(getWidth(), getHeight()) / 2 - getResources().getDimensionPixelSize(R.dimen.view_margin_small2);
-        canvas.drawCircle(centerX, centerY, radius, paint);
-
-
-    }
 
     @Override
     public boolean isInEditMode() {

@@ -1,4 +1,4 @@
-package com.droidsonroids.workcation.common.transitions;
+package com.test.workflow.workcation.common.transitions;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
-import com.droidsonroids.workcation.R;
+import com.test.starblinkanimation.R;
 
 public class ScaleDownImageTransition extends Transition {
     private static final int DEFAULT_SCALE_DOWN_FACTOR = 8;

@@ -1,17 +1,19 @@
-package com.droidsonroids.workcation.screens.main.map;
+package com.test.workflow.workcation.screens.main.map;
 
-import com.droidsonroids.workcation.common.maps.MapsUtil;
-import com.droidsonroids.workcation.common.model.BaliDataProvider;
-import com.droidsonroids.workcation.common.model.Bounds;
-import com.droidsonroids.workcation.common.model.DirectionsResponse;
-import com.droidsonroids.workcation.common.model.MapsApiManager;
-import com.droidsonroids.workcation.common.model.Route;
-import com.droidsonroids.workcation.common.mvp.MvpPresenterImpl;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.Gson;
 import com.google.maps.android.PolyUtil;
+import com.test.workflow.workcation.common.maps.MapsUtil;
+import com.test.workflow.workcation.common.model.BaliDataProvider;
+import com.test.workflow.workcation.common.model.Bounds;
+import com.test.workflow.workcation.common.model.DirectionsResponse;
+import com.test.workflow.workcation.common.model.MapsApiManager;
+import com.test.workflow.workcation.common.model.Route;
+import com.test.workflow.workcation.common.mvp.MvpPresenterImpl;
+
 import java.io.IOException;
 import java.util.ArrayList;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;

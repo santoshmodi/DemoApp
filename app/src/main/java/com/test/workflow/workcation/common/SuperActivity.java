@@ -1,5 +1,5 @@
-package com.droidsonroids.workcation.common;
+package com.test.workflow.workcation.common;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SuperActivity extends AppCompatActivity {}

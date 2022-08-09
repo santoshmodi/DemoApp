@@ -15,16 +15,13 @@ import com.test.starblinkanimation.R;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//Create By Santosh
 public class SquareRippleView extends View {
 
     private static final int DEFAULT_RIPPLE_COUNT = 4;
     private static final int DEFAULT_DURATION_TIME = 40;
-
     private int rippleColor;
     private float rippleStrokeWidth;
-
-
     final Handler handler = new Handler();// 1000 milliseconds == 1 second
     private Paint mPaintRadar;
     private Paint mPaintRadarBorder;
@@ -75,13 +72,7 @@ public class SquareRippleView extends View {
         final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RippleBackground);
         rippleColor = typedArray.getColor(R.styleable.RippleBackground_rb_color, getResources().getColor(R.color.black));
         rippleStrokeWidth = typedArray.getDimension(R.styleable.RippleBackground_rb_strokeWidth, getResources().getDimension(R.dimen.rippleStrokeWidth));
-//        rippleRadius = typedArray.getDimension(R.styleable.RippleBackground_rb_radius, getResources().getDimension(R.dimen.rippleRadius));
-//        rippleDurationTime = typedArray.getInt(R.styleable.RippleBackground_rb_duration, DEFAULT_DURATION_TIME);
-//        rippleAmount = typedArray.getInt(R.styleable.RippleBackground_rb_rippleAmount, DEFAULT_RIPPLE_COUNT);
-//        rippleScale = typedArray.getFloat(R.styleable.RippleBackground_rb_scale, DEFAULT_SCALE);
-//        rippleType = typedArray.getInt(R.styleable.RippleBackground_rb_type, DEFAULT_FILL_TYPE);
         typedArray.recycle();
-//        rippleDelay = rippleDurationTime / rippleAmount;
         mPaintRadar = new Paint();
         mPaintRadar.setColor(rippleColor);
         mPaintRadar.setStyle(Paint.Style.FILL);
@@ -90,7 +81,6 @@ public class SquareRippleView extends View {
         mPaintRadarBorder.setColor(rippleColor);
         mPaintRadarBorder.setStyle(Paint.Style.STROKE);
         mPaintRadarBorder.setStrokeWidth(rippleStrokeWidth);
-//        item.add(new Circle(0));
         handler.postDelayed(new Runnable() {
             public void run() {
                 item.add(new Square(0));

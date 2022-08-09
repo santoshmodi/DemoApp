@@ -40,7 +40,7 @@ public class MyTextViewCharDraw extends androidx.appcompat.widget.AppCompatTextV
                     StartDrawIndex = 0;
                 }
             }
-            setText(CurrentText + "|");
+            setText(CurrentText );
             handler.postDelayed(this, 200);
         }
     };
