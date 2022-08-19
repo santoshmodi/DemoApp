@@ -18,7 +18,7 @@ import java.util.List;
 //Create By Santosh
 public class SquareRippleView extends View {
 
-    private static final int DEFAULT_RIPPLE_COUNT = 4;
+    private static final int DEFAULT_RIPPLE_COUNT = 1;
     private static final int DEFAULT_DURATION_TIME = 40;
     private int rippleColor;
     private float rippleStrokeWidth;

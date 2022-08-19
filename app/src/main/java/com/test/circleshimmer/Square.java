@@ -14,8 +14,8 @@ public class Square {
     }
 
     public void Update(int mRadius) {
-        Radius = Radius + 2;
-        Alpha = Alpha - 5;
+        Radius = Radius + 1.5f;
+        Alpha = Alpha - 3;
         if (Alpha <= 0) {
             Alpha = 255;
             Radius = 0;

@@ -1,8 +1,7 @@
-package com.test.workflow.workcation.common.maps;
+package com.test.rippleActivityStart.maps;
 
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
-import com.test.workflow.workcation.common.model.Bounds;
 
 public class MapsUtil {
     public static final String MAP_BITMAP_KEY = "map_bitmap_key";

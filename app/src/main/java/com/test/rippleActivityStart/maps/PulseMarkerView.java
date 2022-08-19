@@ -1,4 +1,4 @@
-package com.test.workflow.workcation.common.maps;
+package com.test.rippleActivityStart.maps;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -19,7 +19,6 @@ import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.test.starblinkanimation.R;
-import com.test.workflow.workcation.common.views.GuiUtils;
 
 public class PulseMarkerView extends MarkerView {
     private static final int STROKE_DIMEN = 2;
@@ -88,7 +87,7 @@ public class PulseMarkerView extends MarkerView {
     }
 
     private void setupScaleAnimation(final Context context) {
-        scaleAnimation = AnimationUtils.loadAnimation(context, com.test.starblinkanimation.R.anim.pulse);
+        scaleAnimation = AnimationUtils.loadAnimation(context, R.anim.pulse);
         scaleAnimation.setDuration(100);
     }
 

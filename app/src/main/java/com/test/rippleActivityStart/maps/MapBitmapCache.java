@@ -1,4 +1,4 @@
-package com.test.workflow.workcation.common.maps;
+package com.test.rippleActivityStart.maps;
 
 import android.graphics.Bitmap;
 import android.util.LruCache;

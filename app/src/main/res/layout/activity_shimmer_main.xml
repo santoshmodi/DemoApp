@@ -31,7 +31,6 @@
     <com.test.circleshimmer.CircleRippleView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@color/black"
         app:rb_color="#FFC107"
         app:rb_strokeWidth="1dp"></com.test.circleshimmer.CircleRippleView>
     <!--        android:layout_height="match_parent"></com.test.circleshimmer.CircleRippleView>-->

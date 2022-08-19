@@ -1,4 +1,4 @@
-package com.test.workflow.workcation.common.maps;
+package com.test.rippleActivityStart.maps;
 
 import android.content.Context;
 import android.graphics.Color;

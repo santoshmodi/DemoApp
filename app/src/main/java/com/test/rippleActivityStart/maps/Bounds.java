@@ -1,4 +1,4 @@
-package com.test.workflow.workcation.common.model;
+package com.test.rippleActivityStart.maps;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.gson.annotations.SerializedName;
